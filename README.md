@@ -46,4 +46,5 @@ The bottom row buttons are rather straightforward, so I'll just go over them bri
 Finally, the following keyboard shortcuts are available.
 
 ```ctrl-o``` - Opens the ```prefs.txt``` file in your default program.
+
 ```ctrl-t``` - Displays the ```About``` window.
