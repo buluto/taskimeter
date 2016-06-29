@@ -1,4 +1,5 @@
-# taskimeter
+# taskimeter [![ghit.me](https://ghit.me/badge.svg?repo=buluto/taskimeter)](https://ghit.me/repo/buluto/taskimeter)
+
 A no-nonsense task time tracking tool written in Python that
 * stays out of your way but still reminds itself with its tiny always-on-top widget
 * uses your default programs to edit configurations and view logs
