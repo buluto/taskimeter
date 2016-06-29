@@ -42,3 +42,8 @@ The bottom row buttons are rather straightforward, so I'll just go over them bri
 ```Rmdr``` - Sets a reminder to remind you to record your time worked in your timesheet.
 
 ```Log``` - Opens ```log.csv``` in your default program.
+
+Finally, the following keyboard shortcuts are available.
+
+```ctrl-o``` - Opens the ```prefs.txt``` file in your default program.
+```ctrl-t``` - Displays the ```About``` window.

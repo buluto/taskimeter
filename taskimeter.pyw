@@ -502,8 +502,12 @@ if __name__ == '__main__':
     # Keyboard shortcuts
     root.bind('<Control_L>t',lambda event=None, i='about': handleKeys(i))
     root.bind('<Control_R>t',lambda event=None, i='about': handleKeys(i))
+    root.bind('<Control_L>T',lambda event=None, i='about': handleKeys(i))
+    root.bind('<Control_R>T',lambda event=None, i='about': handleKeys(i))
     root.bind('<Control_L>o',lambda event=None, i='prefs': handleKeys(i))
     root.bind('<Control_R>o',lambda event=None, i='prefs': handleKeys(i))
+    root.bind('<Control_L>O',lambda event=None, i='prefs': handleKeys(i))
+    root.bind('<Control_R>O',lambda event=None, i='prefs': handleKeys(i))
 
     # Create other objects
     cur = CurrentTask()
