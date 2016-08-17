@@ -3,7 +3,7 @@
 A no-nonsense task time tracking tool written in Python that
 * stays out of your way but still reminds itself with its tiny always-on-top widget
 * uses your default programs to edit configurations and view logs
-* avoids heavy dependencies using TkInter for the GUI
+* avoids heavy dependencies by using TkInter for the GUI
 * in fact has no dependencies other than the Python standard distribution (at least for Windows, see previous item)
 * runs on Windows, Linux and Mac
 
