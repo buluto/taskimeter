@@ -7,11 +7,11 @@ A no-nonsense task time tracking tool written in Python that
 * in fact has no dependencies other than the Python standard distribution (at least for Windows, see previous item)
 * runs on Windows, Linux and Mac
 
-####Requirements
+##Requirements
 * Python 3
 * TkInter (included in Python for Windows)
 
-####How to Use
+##How to Use
 Simply run ```taskimeter.py```. This will create all the necessary configuration and log files inside a ```res``` directory in the path where ```taskimeter.py``` is located. These are
 * ```icon.ico``` - Window icon
 * ```prefs.txt``` - Preferences file with default values
