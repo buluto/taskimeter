@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------------
 # Name:        Taskimeter
 # Purpose:     Task time tracking
-# Version:     1.2
+# Version:     1.3
 #
 # Author:      Bulut Ozturk < firstname dot lastname at gmail dot com >
 #
@@ -9,22 +9,22 @@
 #-------------------------------------------------------------------------------
 # Copyright (c) 2014-2024 Bulut Ozturk
 #
-# Permission is hereby granted, free of charge, to any person obtaining a 
-# copy of this software and associated documentation files (the "Software"), 
-# to deal in the Software without restriction, including without limitation 
-# the rights to use, copy, modify, merge, publish, distribute, sublicense, 
-# and/or sell copies of the Software, and to permit persons to whom the 
+# Permission is hereby granted, free of charge, to any person obtaining a
+# copy of this software and associated documentation files (the "Software"),
+# to deal in the Software without restriction, including without limitation
+# the rights to use, copy, modify, merge, publish, distribute, sublicense,
+# and/or sell copies of the Software, and to permit persons to whom the
 # Software is furnished to do so, subject to the following conditions:
 #
-# The above copyright notice and this permission notice shall be included in 
+# The above copyright notice and this permission notice shall be included in
 # all copies or substantial portions of the Software.
 #
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 #-------------------------------------------------------------------------------
 
@@ -413,7 +413,7 @@ if __name__ == '__main__':
     #abspath = os.path.abspath(os.path.dirname(sys.executable))
     abspath = os.path.abspath(os.path.dirname(__file__))
 
-    # blank string
+    # Blank string
     global blank
     blank = ""
 
@@ -427,25 +427,29 @@ if __name__ == '__main__':
     readLang()
 
     # Window dimensions (x,y) and position (x,y)
+    root.geometry('200x65+300+300')
     try:
-        root.geometry('200x65+'+pdict['posx']+'+'+pdict['posy'])
+        if int(pdict['posx']) < root.winfo_screenwidth() and int(pdict['posy']) < root.winfo_screenheight():
+            root.geometry('200x65+'+pdict['posx']+'+'+pdict['posy'])
     except:
-        root.geometry('200x65+300+300')
+        pass
 
     # Non-resizable
     root.resizable(0,0)
 
     # Window on top
+    root.wm_attributes('-topmost',1)
     try:
         root.wm_attributes('-topmost',pdict['alwaysontop'])
     except:
-        root.wm_attributes('-topmost',1)
+        pass
 
     # Tool window
+    root.wm_attributes('-toolwindow', 1)
     try:
         root.wm_attributes('-toolwindow',pdict['toolwindow'])
     except:
-        root.wm_attributes('-toolwindow', 1)
+        pass
 
     # When closing
     root.protocol('WM_DELETE_WINDOW',lambda: closeApp())
