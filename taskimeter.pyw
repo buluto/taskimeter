@@ -7,7 +7,7 @@
 #
 # Created:     24/11/2014
 #-------------------------------------------------------------------------------
-# Copyright (c) 2014-2018 Bulut Ozturk
+# Copyright (c) 2014-2024 Bulut Ozturk
 #
 # Permission is hereby granted, free of charge, to any person obtaining a 
 # copy of this software and associated documentation files (the "Software"), 
@@ -108,7 +108,7 @@ class App(Frame):
     def startStop(self):
 
         # If timer is off
-        if   cur.active == False and cur.name.get() != empty:
+        if   cur.active == False and cur.name.get() != blank:
             self.start()
         # If timer is on
         elif cur.active == True:
@@ -116,7 +116,7 @@ class App(Frame):
 
     def start(self):
 
-        detail = askstring(empty,ldict['c_detail'])
+        detail = askstring(blank,ldict['c_detail'])
         if detail == None:
             cur.reset()
             return
@@ -128,7 +128,7 @@ class App(Frame):
 
         if cur.duration.get()[0:4] != '0:00': # Record iff duration > 1 min
             # Review task details
-            detail = askstring(empty,ldict['c_detail'],initialvalue=cur.detail.get())
+            detail = askstring(blank,ldict['c_detail'],initialvalue=cur.detail.get())
             if detail == None:
                 return
             cur.detail.set(detail.strip(sep))
@@ -232,9 +232,9 @@ class CurrentTask():
 
         # Variables
         self.name = StringVar()
-        self.name.set(empty)
+        self.name.set(blank)
         self.detail = StringVar()
-        self.detail.set(empty)
+        self.detail.set(blank)
         self.duration = StringVar()
         self.duration.set('0:00:00')
         self.start = datetime.min
@@ -242,7 +242,7 @@ class CurrentTask():
 
     def reset(self):
 
-        self.name.set(empty)
+        self.name.set(blank)
         self.duration.set('0:00:00')
 
 class Timer():
@@ -326,8 +326,8 @@ def readPrefs():
 
     # Read and populate prefs dict
     global pdict
-    pdict = {'alwaysontop':empty,'toolwindow':empty,'posx':empty,'posy':empty,
-             'csvsep':empty,'lang':empty}
+    pdict = {'alwaysontop':blank,'toolwindow':blank,'posx':blank,'posy':blank,
+             'csvsep':blank,'lang':blank}
     # = separates parameter (left) and value (right)
     for line in plist:
         pline = line.strip('\ufeff\n')
@@ -370,8 +370,8 @@ def setPrefs(pnam,pval):
     pdict[pnam] = pval
 
     # Update prefs file
-    prefi = empty # Pref item
-    prefl = empty # Pref line
+    prefi = blank # Pref item
+    prefl = blank # Pref line
     # = separates parameter (left) and value (right)
     for line in plist:
         pline = line.strip('\ufeff\n')
@@ -413,9 +413,9 @@ if __name__ == '__main__':
     #abspath = os.path.abspath(os.path.dirname(sys.executable))
     abspath = os.path.abspath(os.path.dirname(__file__))
 
-    # Empty string
-    global empty
-    empty = ""
+    # blank string
+    global blank
+    blank = ""
 
     # Create missing files
     createMissing()
