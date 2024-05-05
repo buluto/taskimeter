@@ -1,19 +1,11 @@
 ﻿# GUI elements
 g_edit=Bearbeiten
-g_stop=Stop
-g_timesheet=Arbeitszeitliste
-g_log=Log
-g_alarm=Erng
+g_stop=Stopp
+g_log=Protokoll
 # Dialog window titles
-t_detail=Beschreibung
-t_alarm=Erinnerung stellen
-t_remind=Erinnerung
-t_alarmerr=Fehler
-t_openurlerr=Fehler
+t_detail=Einzelheiten
 t_about=Über Taskimeter
+t_error=Fehler
 # Dialog window content
-c_detail=    Beschreibung der erledigten Arbeit    
-c_alarm=Erinnerung stellen um... (Derzeit &):
-c_alarmerr=Ungültiges Format. Bitte HH:MM (24h) nutzen.
-c_remind=Haben Sie Ihre Arbeitszeiten schon eingetragen?
-c_openurlerr=Keine(n) URL oder Kommando für die Arbeitszeitliste eingegeben.
+c_detail=Einzelheiten der Tätigkeit
+c_logfile=Bitte Protokolldatei (log.csv) schließen und erneut versuchen.
