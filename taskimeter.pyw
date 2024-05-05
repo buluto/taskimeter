@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------------
 # Name:        Taskimeter
 # Purpose:     Task time tracking
-# Version:     1.2
+# Version:     1.3
 #
 # Author:      Bulut Ozturk < firstname dot lastname at gmail dot com >
 #
