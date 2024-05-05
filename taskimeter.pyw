@@ -426,6 +426,9 @@ if __name__ == '__main__':
     # Language
     readLang()
 
+    # Non-resizable
+    root.resizable(0,0)
+  
     # Window dimensions (x,y) and position (x,y)
     root.geometry('200x65+300+300')
     try:
@@ -433,9 +436,6 @@ if __name__ == '__main__':
             root.geometry('200x65+'+pdict['posx']+'+'+pdict['posy'])
     except:
         pass
-
-    # Non-resizable
-    root.resizable(0,0)
 
     # Window on top
     root.wm_attributes('-topmost',1)
@@ -450,7 +450,7 @@ if __name__ == '__main__':
         root.wm_attributes('-toolwindow',pdict['toolwindow'])
     except:
         pass
-
+  
     # When closing
     root.protocol('WM_DELETE_WINDOW',lambda: closeApp())
 
