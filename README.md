@@ -1,4 +1,4 @@
-# taskimeter
+# Taskimeter
 
 A no-nonsense task time tracking tool written in Python that
 * stays out of your way but still reminds itself with its tiny always-on-top widget
@@ -14,7 +14,7 @@ Requirements
 
 How to Use
 
-Simply run ```taskimeter.py```. This will create all the necessary configuration and log files inside a ```res``` directory in the path where ```taskimeter.py``` is located. These are
+Simply run ```taskimeter.pyw```. This will create all the necessary configuration and log files inside a ```res``` directory in the path where ```taskimeter.pyw``` is located. These are
 * ```prefs.txt``` - Preferences file with default values
 * ```tasks.txt``` - Task list
 * ```lang_en.txt``` - English language file with default values (other language files in the repository)
