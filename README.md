@@ -25,7 +25,7 @@ Choosing ```Edit``` will open the ```tasks.txt``` file in your default program. 
 
 Choosing a task from this list will start the counter, which will continue counting until you either click ```Stop```, choose another task, or close the program. When you do any one of these, you will be asked to provide a little detail of what you did during this time. You can leave this prompt blank as well.
 
-Your time worked has now been recorded in the  ```log.csv ``` file.
+Your time worked has now been recorded in the  ```log.csv``` file.
 
 The bottom row buttons are rather straightforward, so I'll just go over them briefly.
 
