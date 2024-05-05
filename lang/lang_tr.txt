@@ -1,20 +1,10 @@
 ﻿# GUI elements
 g_edit=Düzenle
 g_stop=Dur
-g_timesheet=Zaman girişi
-g_log=Log
-g_alarm=Alarm
-g_website=ClickTime
+g_log=Kayıt defteri
 # Dialog window titles
-t_detail=Açıklama
-t_alarm=Alarm kur
-t_remind=Hatırlatma
-t_alarmerr=Hata
-t_openurlerr=Hata
-t_about=Hakkında
+t_detail=Ayrıntılar
+t_about=Taskimeter Hakkında
 # Dialog window content
-c_detail=    Yapılan işin ayrıntısı    
-c_alarm=Hatırlatma saati (Mevcut &):
-c_alarmerr=SS:DD (24h) biçiminde girin.
-c_remind=Zaman girişlerinizi yaptınız mı?
-c_openurlerr=Zaman girişi için URL ya da komut tanımlı değil.
+c_detail=Yapılan işin ayrıntıları
+c_logfile=Lütfen kayıt defterini (log.csv) kapatın ve yeniden deneyin.
