@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------------
 # Name:        Taskimeter
 # Purpose:     Task time tracking
-# Version:     1.3
+# Version:     1.2
 #
 # Author:      Bulut Ozturk < firstname dot lastname at gmail dot com >
 #
@@ -214,8 +214,8 @@ class App(Frame):
     def showAbout(self):
 
         ibox = messagebox.showinfo(ldict['t_about'],
-                                   "Taskimeter v1.2\n"+
-                                   "\u00a9 2014-2018 Bulut \u00d6zt\u00fcrk\n")
+                                   "Taskimeter v1.3\n"+
+                                   "\u00a9 2014-2024 Bulut \u00d6zt\u00fcrk\n")
 
     def openDir(self):
 
